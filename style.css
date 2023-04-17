@@ -127,20 +127,24 @@ img {
     box-shadow: 0px 0px 45px -10px rgba(0, 0, 0, 0.35);
 }
 
+.content {
+    margin-top: 107px;
+    margin-bottom: 104px;
+}
+
+.content__box {
+    border-bottom: 5px solid #ECECEC;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .content__article {
     width: 539px;
 }
 
 .content__info {
     width: 610px;
-}
-
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 107px;
-    margin-bottom: 104px;
 }
 
 .content__info {
@@ -185,7 +189,6 @@ img {
 }
 
 .content__subtitle {
-    font-family: Open Sans;
     font-size: 24px;
     font-style: italic;
     font-weight: 600;
