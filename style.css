@@ -160,7 +160,6 @@ img {
     font-style: normal;
     font-weight: 700;
     font-size: 42px;
-    line-height: 55px;
     letter-spacing: 0.4px;
     text-transform: uppercase;
     color: #000000;
@@ -273,13 +272,13 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 67px;
 }
 
 .team__title {
     font-style: normal;
     font-weight: 700;
     font-size: 42px;
-    line-height: 0px;
     letter-spacing: 0.4px;
     text-transform: uppercase;
 }
@@ -290,29 +289,19 @@ img {
     margin-bottom: 37px;
 }
 
-.stroke {
+.team__stroke {
     height: 5px;
     width: 130px;
     background-color: #FF2D2D;
 }
 
-.team__stroke {
-    margin-bottom: 67px;
-}
-
-.team__div {
-    width: 310px;
-    height: 458px;
-    background-color: #FF3F40;
-}
-
-.team__menu {
-    list-style-type: none;
+.team__links {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
     margin-top: 46px;
     margin-bottom: 59px;
+
 }
 
 .team__info {
@@ -325,11 +314,39 @@ img {
     gap: 15px;
 }
 
-.team__block {
-    width: 190px;
+.team__photo {
+    display: flex;
+    width: 196px;
     height: 216px;
     background-color: #FF3F40;
     position: relative;
+    overflow: hidden;
+}
+
+.team__name-box {
+    mix-blend-mode: normal;
+    text-transform: uppercase;
+    background-color: #000000;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    bottom: 0;
+    left: -100%;
+    transition: left 0.4s;
+}
+
+.team__person-name {
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-style: italic;
+    text-align: center;
+}
+
+.team__photo:hover .team__name-box {
+    left: 0
 }
 
 .team__content {
@@ -357,7 +374,7 @@ img {
 }
 
 .team__link:hover {
-    color: #FF2D2D;
+    text-decoration: underline;
 }
 
 .team__block_name::after {
@@ -470,6 +487,9 @@ img {
 
 .contacts__stroke {
     margin-bottom: 74px;
+    background-color: #FF2D2D;
+    width: 134px;
+    height: 5px;
 }
 
 
@@ -494,7 +514,9 @@ img {
 .contacts__text {
     padding-top: 141px;
     padding-left: 81px;
+    color: #FFFFFF;
 }
+
 
 
 
@@ -721,13 +743,9 @@ img {
         font-size: 16px;
     }
 
-    .team__block {
+    .team__photo {
         width: 150px;
         height: 146px;
-    }
-
-    .team__block_name::after {
-        top: 83px;
     }
 
     .form__title {
