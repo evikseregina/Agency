@@ -795,6 +795,10 @@ img {
         grid-template-columns: repeat(1, 300px);
     }
 
+    .product__link {
+        font-size: 12px;
+    }
+
     .top__content {
         gap: 60px
     }
@@ -818,6 +822,18 @@ img {
 
     .top__title {
         font-size: 40px;
+    }
+
+    .contacts__form {
+        width: 420px;
+        margin: auto;
+    }
+
+    .contacts__info {
+        width: 420px;
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
     }
 
     .contacts__name {
