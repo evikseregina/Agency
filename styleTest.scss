@@ -1,3 +1,5 @@
+@import "colors";
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +19,7 @@ img {
 
 
 .header {
-    background: #000000;
+    background: $color;
 }
 
 .center {
@@ -46,27 +48,28 @@ img {
     line-height: 24px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    color: #E0E0E0;
+    color: $formColor;
 }
 
 .menu__link:hover {
-    background-color: #FF3F40;
-    color: #Fff;
+
+    background-color: $backColor;
+    color: $whiteColor;
 }
 
 .menu__link_active {
-    background: #FF3F40;
+    background: $backColor;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    color: #E0E0E0;
+    color: $formColor;
 }
 
 .top {
-    background: #F6F2F2;
+    background: $topColor;
     padding-top: 29px;
     padding-bottom: 110px;
 }
@@ -89,7 +92,7 @@ img {
     line-height: 72px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: #000000;
+    color: $color;
 }
 
 .text {
@@ -97,7 +100,7 @@ img {
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
-    color: #000000;
+    color: $color;
 }
 
 .top__text {
@@ -107,14 +110,15 @@ img {
 }
 
 .button {
-    background-color: #FF2D2D;
+    background-color: $hoverColor;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 34px;
     letter-spacing: 0.3px;
-    color: #FFFFFF;
+    color: $whiteColor;
     transition: all 0.4s;
+    border-radius: 5px;
 
 }
 
@@ -125,8 +129,8 @@ img {
 }
 
 .top__button:hover {
-    color: #000000;
-    background-color: #FF0000;
+    color: $color;
+    background-color: $button;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -162,7 +166,7 @@ img {
     font-size: 42px;
     letter-spacing: 0.4px;
     text-transform: uppercase;
-    color: #000000;
+    color: $color;
 }
 
 .service__text {
@@ -173,15 +177,15 @@ img {
 .service__button {
     padding: 15px 60px;
     background: rgba(0, 0, 0, 0.0001);
-    border: 2px solid #FF0000;
-    color: #FF0000;
+    border: 2px solid $button;
+    color: $button;
     transition: all 0.4s;
 }
 
 .service__button:hover {
-    background-color: #FFFFFF;
-    color: #000000;
-    border: 2px solid #000000;
+    background-color: $whiteColor;
+    color: $color;
+    border: 2px solid $color;
 }
 
 .article__subtitle {
@@ -196,9 +200,6 @@ img {
     margin-bottom: 35px;
 }
 
-.article__img_margin {
-    margin-top: 51px;
-}
 
 .product__box {
     margin-bottom: 132px;
@@ -212,7 +213,7 @@ img {
 }
 
 
-.text_margin {
+.text__product {
     margin-top: 28px;
     margin-bottom: 33px;
 
@@ -239,15 +240,15 @@ img {
     letter-spacing: 0.2px;
     text-transform: uppercase;
     transition: color 0.4s;
-    color: #000000;
+    color: $color;
 }
 
 .product__link:hover {
-    color: #FF2D2D;
+    color: $hoverColor;
 }
 
 .product__link_active {
-    color: #FF2D2D;
+    color: $hoverColor;
 }
 
 .products__block {
@@ -260,7 +261,7 @@ img {
 .products__photo {
     width: 301px;
     height: 293px;
-    border: 0.01px solid black;
+    border: 0.01px solid $color;
     background-color: #5281FF;
 }
 
@@ -292,7 +293,7 @@ img {
 .team__stroke {
     height: 5px;
     width: 130px;
-    background-color: #FF2D2D;
+    background-color: $hoverColor;
 }
 
 .team__links {
@@ -304,7 +305,7 @@ img {
 
 }
 
-.team__info {
+.team__text {
     width: 635px;
 }
 
@@ -318,7 +319,7 @@ img {
     display: flex;
     width: 196px;
     height: 216px;
-    background-color: #FF3F40;
+    background-color: $backColor;
     position: relative;
     overflow: hidden;
 }
@@ -326,7 +327,7 @@ img {
 .team__name-box {
     mix-blend-mode: normal;
     text-transform: uppercase;
-    background-color: #000000;
+    background-color: $color;
     opacity: 0.5;
     position: absolute;
     width: 100%;
@@ -340,7 +341,7 @@ img {
 .team__person-name {
     font-weight: 600;
     font-size: 18px;
-    color: #FFFFFF;
+    color: $whiteColor;
     font-style: italic;
     text-align: center;
 }
@@ -369,29 +370,12 @@ img {
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.9px;
-    color: #000000;
+    color: $color;
     transition: color 0.4s;
 }
 
 .team__link:hover {
     text-decoration: underline;
-}
-
-.team__block_name::after {
-    content: 'sokina jue';
-    padding: 10px 50px;
-    background-color: #000000;
-    opacity: 0.5;
-    position: absolute;
-    top: 175px;
-    left: 0;
-    right: 0;
-    mix-blend-mode: normal;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #FFFFFF;
 }
 
 .form__title {
@@ -400,11 +384,11 @@ img {
     font-size: 42px;
     line-height: 24px;
     letter-spacing: 1px;
-    color: #FFFFFF;
+    color: $whiteColor;
 }
 
-.form__paragraph {
-    color: #FFFFFF;
+.form__text {
+    color: $whiteColor;
     margin-top: 17px;
     margin-bottom: 57px;
 }
@@ -412,7 +396,6 @@ img {
 
 .form {
     background-color: #313030;
-
 }
 
 .form__info {
@@ -430,13 +413,11 @@ img {
     text-transform: uppercase;
     padding: 28px 60px;
     margin-left: 19px;
-    border-radius: 5px;
-
 }
 
 .form__button:hover {
-    color: #000000;
-    background-color: #F6F2F2;
+    color: $color;
+    background-color: $topColor;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -446,7 +427,7 @@ img {
     font-size: 16px;
     line-height: 28px;
     border-radius: 5px;
-    color: #000000;
+    color: $color;
 }
 
 .form__input {
@@ -471,14 +452,6 @@ img {
     width: 753px;
 }
 
-.contacts__title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 0px;
-    letter-spacing: 0.4px;
-    text-transform: uppercase;
-}
 
 .contacts__paragraph {
     margin-top: 46px;
@@ -487,17 +460,15 @@ img {
 
 .contacts__stroke {
     margin-bottom: 74px;
-    background-color: #FF2D2D;
+    background-color: $hoverColor;
     width: 134px;
     height: 5px;
 }
 
-
 .contacts__message {
-
     width: 634px;
     height: 252px;
-    background-color: #E0E0E0;
+    background-color: $formColor;
     padding: 0 53px;
     margin-bottom: 43px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -507,30 +478,31 @@ img {
     width: 580px;
     height: 485px;
     background-color: #2d2d2d;
-    color: #Fff;
-    margin-top: 270px;
+    color: $whiteColor;
+    margin-top: 320px;
+}
+
+.contacts_color {
+    color: $whiteColor
 }
 
 .contacts__text {
     padding-top: 141px;
     padding-left: 81px;
-    color: #FFFFFF;
+    color: $whiteColor;
 }
-
-
-
 
 .contacts__name {
     width: 239px;
     height: 69px;
-    background-color: #E0E0E0;
+    background-color: $formColor;
     padding: 0 50px;
 }
 
 .contacts__mail {
     width: 242px;
     height: 71px;
-    background-color: #E0E0E0;
+    background-color: $formColor;
     padding: 0 50px;
 }
 
@@ -539,12 +511,11 @@ img {
     height: 75px;
     background-color: #FF3B3B;
     text-transform: uppercase;
-    border-radius: 5px;
 }
 
 .contacts__btn:hover {
     padding-top: 4px;
-    background-color: #FF0000;
+    background-color: $button;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -565,9 +536,7 @@ img {
     margin-bottom: 30px;
 }
 
-.contacts_color {
-    color: #FFFFFF;
-}
+
 
 .contacts__adress {
     margin-bottom: 27px;
@@ -582,7 +551,7 @@ img {
 }
 
 .contacts__tel:hover {
-    color: #FF0000;
+    color: $button;
     font-size: 18px;
 }
 
@@ -852,8 +821,16 @@ img {
         width: 410px;
     }
 
+    .team__top {
+        text-align: center;
+    }
+
     .team__info {
         width: unset;
+    }
+
+    .team__stroke {
+        margin: auto;
     }
 
     .contacts {
