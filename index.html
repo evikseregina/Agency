@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleTest.css">
 </head>
 
 <body>
@@ -63,14 +63,14 @@
                     eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor </p>
             </article>
             <article class="article">
-                <img class="article__img article__img_margin" src="img/logo.svg" alt="icon">
+                <img class="article__img" src="img/logo.svg" alt="icon">
                 <h6 class="article__subtitle ">Logo / Branding</h6>
                 <p class="text">Lorem ipsum dolor sitea amet, zixf conseit adipi cing elit, seddi do
                     eiusmod btdempor in didunt utlae ore etioeew idolor sit amet,</p>
             </article>
-            <article class="article__block">
-                <img class="article__img article__img_margin" src="img/animation.svg" alt="icon">
-                <h6 class="article__subtitle ">Animation</h6>
+            <article class="article">
+                <img class="article__img" src="img/animation.svg" alt="icon">
+                <h6 class="article__subtitle">Animation</h6>
                 <p class="text">Lorem ipsum dolor sitea amet, zixf conseit adipi cing elit, seddi do
                     eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor sit amet,</p>
             </article>
@@ -80,7 +80,7 @@
         <div class="product__box">
             <div class="product__info">
                 <h3 class="title">feature products</h3>
-                <p class="text text_margin">Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do
+                <p class="text text__product">Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do
                     eiusmod<br>
                     tempor
                     incididunt ut labore et.</p>
@@ -107,32 +107,45 @@
             </div>
         </div>
     </section>
-    <section class="team center ">
-        <div class="team__text">
-            <h3 class="team__title">Meet our team</h3>
-            <p class=" text team__paragraph">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing
+    <section class="team center">
+        <div class="team__top">
+            <h3 class="title">Meet our team</h3>
+            <p class="text team__paragraph">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing
                 eiusmod
                 tempor incididut labore Ui / Ux , print template.</p>
-            <div class="stroke team__stroke"></div>
+            <div class="team__stroke"></div>
         </div>
         <div class="team__section">
-            <div class="team__div"></div>
+            <img class="team__photo-big" src="img/Selected Image.png" alt="big photo">
             <div class="team__content">
                 <h4 class="team__subtitle">mark waugh</h4>
-                <p class="team__info">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod
+                <p class="text team__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod
                     tempor
                     incididut labore Ui / Ux , print template.</p>
-                <ul class="team__menu">
-                    <li class="team__list"><a href="" class="team__link">Facebook</a></li>
-                    <li class="team__list"><a href="" class="team__link">Dribble</a></li>
-                    <li class="team__list"><a href="" class="team__link">Behance</a></li>
-                    <li class="team__list"><a href="" class="team__link">Twiter</a></li>
-                </ul>
+                <div class="team__links">
+                    <a href="" class="team__link">Facebook</a>
+                    <a href="" class="team__link">Dribble</a>
+                    <a href="" class="team__link">Behance</a>
+                    <a href="" class="team__link">Twiter</a>
+                </div>
                 <div class="team__img">
-                    <div class="team__block team__block_name"></div>
-                    <div class="team__block"></div>
-                    <div class="team__block"></div>
-                    <div class="team__block"></div>
+                    <a href="#" class="team__photo">
+                        <div class="team__name-box">
+                            <h4 class="team__person-name">Sokina jue</h4>
+                        </div>
+                    </a><a href="#" class="team__photo">
+                        <div class="team__name-box">
+                            <h4 class="team__person-name">Sokina jue</h4>
+                        </div>
+                    </a><a href="#" class="team__photo">
+                        <div class="team__name-box">
+                            <h4 class="team__person-name">Sokina jue</h4>
+                        </div>
+                    </a><a href="#" class="team__photo">
+                        <div class="team__name-box">
+                            <h4 class="team__person-name">Sokina jue</h4>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -140,7 +153,7 @@
     <section class="form center">
         <div class="form__info">
             <h3 class="form__title">Design tips, tricks, and freebies. Delivered weekly.</h3>
-            <p class="text form__paragraph">Lorem ipsum dolor sit amсet, consectetur adipis cing elit, sed do
+            <p class="text form__text">Lorem ipsum dolor sit amсet, consectetur adipis cing elit, sed do
                 eiusmod.
             </p>
             <form class="form__values" action="#">
@@ -152,33 +165,37 @@
     </section>
     <section class="contacts ">
         <div class="contacts__block">
-            <h3 class="contacts__title">get in touch</h3>
-            <p class=" text contacts__paragraph">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do
+            <h3 class="title">get in touch</h3>
+            <p class="text contacts__paragraph">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do
                 eiusmod
                 tempor incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.
                 ur
                 adipis cing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-            <div class="stroke contacts__stroke"></div>
-            <div class="contacts__form">
-                <form action="">
-                    <div class="contacts__div">
-                        <input class=" input contacts__name" type="text" placeholder="Name">
-                        <input class=" input contacts__mail" type="email" name="useremail" id="usermail"
-                            placeholder="Your Mail">
+            <div class=" contacts__stroke"></div>
+            <div class="contacts__position">
+                <div class="contacts__form">
+                    <form action="">
+                        <div class="contacts__div">
+                            <input class=" input contacts__input" type="text" placeholder="Name">
+                            <input class=" input contacts__input" type="email" name="useremail" id="usermail"
+                                placeholder="Your Mail">
+                        </div>
+                        <input class=" input contacts__message" type="text" placeholder="Type your message">
+                        <button class="button contacts__btn" type="submit">Send message</button>
+                    </form>
+                </div>
+
+                <div class="contacts__info">
+                    <div class="contacts__pos">
+                        <h6 class="contacts__subtitle ">contact info</h6>
+                        <p class=" text contacts__text contacts_color">Jalalabad 24 / A, Ambaarkhana, Sylhet,
+                            Bangladesh</p>
+                        <a class="text contacts__text" href="mailto:redwan@deviserweb.com">redwan@deviserweb.com</a>
+                        <a class="text contacts__text contacts_color " href="tel:+8801761746373">(+88) 017 617 46373</a>
                     </div>
-                    <input class=" input contacts__message" type="text" placeholder="Type your message">
-                    <button class="button contacts__btn" type="submit">Send message</button>
-                </form>
+                </div>
             </div>
         </div>
-        <div class="contacts__info">
-            <div class="contacts__text">
-                <h6 class="contacts__subtitle contacts_color">contact info</h6>
-                <p class=" text contacts__adress contacts_color">Jalalabad 24 / A, Ambaarkhana, Sylhet,
-                    Bangladesh</p>
-                <p class="text contacts__email contacts_color">redwan@deviserweb.com</p>
-                <a class="text contacts__tel contacts_color" href="tel:+(88)01761746373">(+88) 017 617 46373</a>
-            </div>
         </div>
     </section>
     <footer class="footer center">
