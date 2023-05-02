@@ -267,6 +267,7 @@ img {
 
 .team {
     margin-bottom: 115px;
+    padding-left: calc(50% - 609px);
 }
 
 .team__section {
@@ -404,15 +405,22 @@ img {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    padding-top: 166px;
-    padding-bottom: 141px;
+    padding-top: 151px;
+    padding-bottom: 140px;
     margin-bottom: 104px;
+}
+
+.form__values {
+    display: flex;
+
 }
 
 .form__button {
     text-transform: uppercase;
-    padding: 28px 60px;
+    padding-right: 60px;
+    padding-left: 60px;
     margin-left: 19px;
+    border: none;
 }
 
 .form__button:hover {
@@ -422,12 +430,15 @@ img {
 }
 
 .input {
+    font-family: Onen Sans;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
     border-radius: 5px;
     color: $color;
+    outline: none;
+    border: none;
 }
 
 .form__input {
@@ -448,10 +459,10 @@ img {
     margin-bottom: 107px;
 }
 
-.contacts__block {
-    width: 753px;
+.contacts__position {
+    display: flex;
+    margin-top: 140px;
 }
-
 
 .contacts__paragraph {
     margin-top: 46px;
@@ -479,29 +490,34 @@ img {
     height: 485px;
     background-color: #2d2d2d;
     color: $whiteColor;
-    margin-top: 320px;
 }
 
-.contacts_color {
-    color: $whiteColor
+.contacts__pos {
+    padding: 141px 81px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .contacts__text {
-    padding-top: 141px;
-    padding-left: 81px;
     color: $whiteColor;
+    transition: all 0.4s;
+
 }
 
-.contacts__name {
-    width: 239px;
-    height: 69px;
-    background-color: $formColor;
-    padding: 0 50px;
+.contacts__div {
+    // padding-top: 141px;
+
+    color: $whiteColor;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 44px;
 }
 
-.contacts__mail {
-    width: 242px;
-    height: 71px;
+.contacts__input {
+    width: 240px;
+    height: 70px;
     background-color: $formColor;
     padding: 0 50px;
 }
@@ -519,12 +535,6 @@ img {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.contacts__div {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 52px;
-    margin-bottom: 44px;
-}
 
 .contacts__subtitle {
     font-style: normal;
@@ -533,7 +543,6 @@ img {
     line-height: 34px;
     letter-spacing: 0.3px;
     text-transform: uppercase;
-    margin-bottom: 30px;
 }
 
 
@@ -546,11 +555,8 @@ img {
     margin-bottom: 20px;
 }
 
-.contacts__tel {
-    transition: all 0.4s;
-}
 
-.contacts__tel:hover {
+.contacts__text:hover {
     color: $button;
     font-size: 18px;
 }
