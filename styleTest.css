@@ -793,7 +793,7 @@ path {
   }
 
   .top__video {
-    width: 350px;
+    width: 450px;
     height: 259px;
   }
 
@@ -817,16 +817,13 @@ path {
     display: flex;
   }
 
-  .contacts__name {
-    width: 70px;
+  .contacts__input {
+    width: 180px;
   }
 
-  .contacts__mail {
-    width: 70px;
-  }
 
-  .contacts__message {
-    width: 300px;
+  .contacts__input_textarea {
+    width: 410px;
   }
 
   .contacts__btn {
