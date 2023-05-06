@@ -640,13 +640,15 @@ path {
 
     .contacts__info {
         width: 380px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .center {
-        padding-left: calc(50% - 1000px / 2);
-        padding-right: calc(50% - 1000px / 2);
+        padding-left: calc(50% - 890px / 2);
+        padding-right: calc(50% - 890px / 2);
         width: 100vw
     }
 
@@ -658,11 +660,7 @@ path {
 
     .top__section {
         width: 100vw;
-        display: flex;
-        width: 100vw;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
+
     }
 
     .top__block {
@@ -712,8 +710,8 @@ path {
 
     .contacts {
         justify-content: center;
-        padding-left: calc(50% - 1000px / 2);
-        padding-right: calc(50% - 1000px / 2);
+        padding-left: calc(50% - 890px / 2);
+        padding-right: calc(50% - 890px / 2);
 
     }
 
@@ -721,10 +719,6 @@ path {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    }
-
-    .contacts__form {
-        margin-left: 100px;
     }
 
     .contacts__info {
@@ -736,6 +730,13 @@ path {
     .center {
         padding-left: calc(50% - 700px / 2);
         padding-right: calc(50% - 700px / 2);
+    }
+
+    .top__section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
     }
 
     .products__block {
@@ -770,12 +771,8 @@ path {
     }
 
     .contacts {
-        padding-left: calc(50% - 600px / 2);
+        padding-left: calc(50% - 700px / 2);
 
-    }
-
-    .contacts__form {
-        margin-left: 50px;
     }
 
     .footer__text {
