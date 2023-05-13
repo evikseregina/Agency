@@ -11,11 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styleTest.css">
+    <script src="https://kit.fontawesome.com/14ab2b91a5.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-
+<body class="root">
     <header class="top center">
+        <i class="fa-solid fa-bars fa-2xl" style="color: #07035f;"></i>
         <nav class="menu">
             <ul class="menu__ul">
                 <li class="menu__li"><a href="#" class="menu__link menu__link_active ">home</a></li>
@@ -23,6 +24,7 @@
                 <li class="menu__li"><a href="#" class="menu__link">about us</a></li>
                 <li class="menu__li"><a href="#" class="menu__link">contact</a></li>
             </ul>
+            <i class="fa-solid fa-xmark fa-2xl" style="color: #ffffff;"></i>
         </nav>
         <div class="top__content ">
             <div class="top__section">
@@ -113,7 +115,7 @@
                 <p class="text team__paragraph">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing
                     eiusmod
                     tempor incididut labore Ui / Ux , print template.</p>
-                <div class="line"></div>
+                <div class="line team__line"></div>
             </div>
             <div class="team__section">
                 <img class="team__photo-big" src="img/Selected Image.png" alt="big photo">
@@ -219,7 +221,23 @@
                 </svg></a>
         </div>
 
+
     </footer>
+    <script>
+        const faEl = document.querySelector('.fa-bars');
+        const navEl = document.querySelector('.menu');
+
+        faEl.addEventListener('click', function (e) {
+            navEl.style.left = 0;
+        });
+
+        const closeEl = document.querySelector('.fa-xmark');
+
+        closeEl.addEventListener('click', function (e) {
+            navEl.style.left = '-100%';
+        });
+
+    </script>
 </body>
 
 </html>
