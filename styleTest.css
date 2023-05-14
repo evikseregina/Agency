@@ -670,8 +670,9 @@ path {
 }
 @media screen and (max-width: 768px) {
   .center {
-    padding-left: calc(50% - 350px);
-    padding-right: calc(50% - 350px);
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100vw;
   }
   .top__section {
     display: flex;
@@ -700,17 +701,9 @@ path {
   .form__title {
     font-size: 26px;
   }
-  .contacts {
-    padding-left: calc(50% - 350px);
-  }
   .footer__text {
     padding-left: 10px;
     padding-right: 10px;
-  }
-  .center {
-    padding-left: calc(50% - 200px);
-    padding-right: calc(50% - 200px);
-    width: 100vw;
   }
   .text {
     width: unset;
@@ -756,9 +749,6 @@ path {
   .top__section {
     width: 350px;
   }
-  .top__video {
-    width: 100vw;
-  }
   .form__input {
     width: 324px;
   }
@@ -795,8 +785,8 @@ path {
     margin: auto;
   }
   .contacts {
-    padding-left: calc(50% - 200px);
-    padding-right: calc(50% - 200px);
+    padding-left: 16px;
+    padding-right: 16px;
     width: 100vw;
   }
   .contacts__paragraph {
