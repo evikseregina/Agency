@@ -628,6 +628,7 @@ path {
   }
   .top__video {
     width: 100vw;
+    height: 400px;
   }
   .service__position {
     grid-template-columns: repeat(2, 1fr);
@@ -721,6 +722,9 @@ path {
   .menu__ul {
     flex-direction: column;
     align-items: unset;
+  }
+  .menu__link_active {
+    background: none;
   }
   .fa-xmark {
     position: absolute;

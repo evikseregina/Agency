@@ -662,6 +662,7 @@ path {
 
     .top__video {
         width: 100vw;
+        height: 400px;
     }
 
     .service__position {
@@ -767,6 +768,7 @@ path {
 
     .top {
         position: relative;
+
     }
 
     .menu {
@@ -780,6 +782,10 @@ path {
     .menu__ul {
         flex-direction: column;
         align-items: unset;
+    }
+
+    .menu__link_active {
+        background: none;
     }
 
     .fa-xmark {
