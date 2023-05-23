@@ -36,73 +36,48 @@ img {
 
 .menu {
     background: $color;
+
+    .menu__ul {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu__link {
+        padding: 39px 23px 26px;
+        display: flex;
+        transition: all 0.4s;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: $inputColor;
+    }
+
+    .menu__link:hover {
+
+        background-color: $backColor;
+        color: $reverseColor;
+    }
+
+    .menu__link_active {
+        background: $backColor;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: $inputColor;
+    }
 }
 
-.menu__ul {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
 
 
-.menu__link {
-    padding: 39px 23px 26px;
-    display: flex;
-    transition: all 0.4s;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    color: $formColor;
-}
-
-.menu__link:hover {
-
-    background-color: $backColor;
-    color: $whiteColor;
-}
-
-.menu__link_active {
-    background: $backColor;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    color: $formColor;
-}
-
-.top {
-    background: $topColor;
-    padding-top: 29px;
-    padding-bottom: 110px;
-}
-
-.top__content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 101px;
-}
-
-.top__section {
-    width: 617px;
-}
-
-.top__title {
-    font-style: italic;
-    font-weight: 800;
-    font-size: 60px;
-    line-height: 72px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: $color;
-}
 
 .text {
     font-style: normal;
@@ -117,14 +92,60 @@ img {
 }
 
 .text_reverse {
-    color: $whiteColor;
+    color: $reverseColor;
 }
 
-.top__text {
-    width: 544px;
-    margin-top: 37px;
-    margin-bottom: 63px;
+.top {
+    background: $topColor;
+    padding-top: 29px;
+    padding-bottom: 110px;
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 101px;
+    }
+
+    &__section {
+        width: 617px;
+    }
+
+    &__title {
+        font-style: italic;
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 72px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: $color;
+    }
+
+    &__text {
+        width: 544px;
+        margin-top: 37px;
+        margin-bottom: 63px;
+    }
+
+    &__button {
+        padding: 15px 63px;
+        margin-bottom: 123px;
+
+    }
+
+    &__button:hover {
+        color: $color;
+        background-color: $colorSelect;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    &__video {
+        width: 554px;
+        height: 359px;
+        box-shadow: 0px 0px 45px -10px rgba(0, 0, 0, 0.35);
+    }
 }
+
 
 .button {
     background-color: $hoverColor;
@@ -133,28 +154,16 @@ img {
     font-size: 18px;
     line-height: 34px;
     letter-spacing: 0.3px;
-    color: $whiteColor;
+    color: $reverseColor;
     border-radius: 5px;
 
 }
 
-.top__button {
-    padding: 15px 63px;
-    margin-bottom: 123px;
 
-}
 
-.top__button:hover {
-    color: $color;
-    background-color: $button;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
 
-.top__video {
-    width: 554px;
-    height: 359px;
-    box-shadow: 0px 0px 45px -10px rgba(0, 0, 0, 0.35);
-}
+
+
 
 .service {
     margin-top: 107px;
@@ -186,7 +195,7 @@ img {
 }
 
 .title_reverse {
-    color: $whiteColor;
+    color: $reverseColor;
     text-transform: none;
 }
 
@@ -198,13 +207,13 @@ img {
 .service__button {
     padding: 15px 60px;
     background: rgba(0, 0, 0, 0.0001);
-    border: 2px solid $button;
-    color: $button;
+    border: 2px solid $colorSelect;
+    color: $colorSelect;
     transition: all 0.4s;
 }
 
 .service__button:hover {
-    background-color: $whiteColor;
+    background-color: $reverseColor;
     color: $color;
     border: 2px solid $color;
 }
@@ -280,7 +289,7 @@ img {
 .products__block {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 17px;
+    gap: $gap - 3;
 
 }
 
@@ -363,7 +372,7 @@ img {
 .team__person-name {
     font-weight: 600;
     font-size: 18px;
-    color: $whiteColor;
+    color: $reverseColor;
     font-style: italic;
     text-align: center;
 }
@@ -479,32 +488,32 @@ img {
 
 .contacts__info {
     background-color: #2d2d2d;
-    color: $whiteColor;
+    color: $reverseColor;
     padding-left: 81px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: $gap;
     justify-content: center;
     flex-grow: 1;
 }
 
 .contacts__text {
-    color: $whiteColor;
+    color: $reverseColor;
     width: 315px;
 }
 
 .contacts__div {
-    color: $whiteColor;
+    color: $reverseColor;
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: $gap * 2.5;
     margin-bottom: 44px;
 }
 
 .contacts__input {
     width: 339px;
     height: 69px;
-    background-color: $formColor;
+    background-color: $inputColor;
     padding: 0 50px;
     box-sizing: border-box;
     font-family: 'Open Sans';
@@ -523,7 +532,7 @@ img {
 .contacts__input_textarea {
     width: 734px;
     height: 252px;
-    background-color: $formColor;
+    background-color: $inputColor;
     padding: 32px 50px;
     margin-bottom: 43px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -541,7 +550,7 @@ img {
 
 .contacts__btn:hover {
     padding-top: 4px;
-    background-color: $button;
+    background-color: $colorSelect;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -589,8 +598,8 @@ img {
 
 .footer__icon {
     background-color: #fff;
-    width: 33px;
-    height: 33px;
+    width: $footerIcon;
+    height: $footerIcon;
     border-radius: 50%;
     display: flex;
     justify-content: center;
