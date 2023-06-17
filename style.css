@@ -33,14 +33,14 @@ img {
 .menu {
   background: #000000;
 }
-.menu .menu__ul {
+.menu__ul {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-.menu .menu__link {
+.menu__link {
   padding: 39px 23px 26px;
   display: flex;
   transition: all 0.4s;
@@ -52,12 +52,8 @@ img {
   text-transform: uppercase;
   color: #E0E0E0;
 }
-.menu .menu__link:hover {
+.menu__link_active {
   background-color: #FF3F40;
-  color: #FFFFFF;
-}
-.menu .menu__link_active {
-  background: #FF3F40;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -65,6 +61,10 @@ img {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: #E0E0E0;
+}
+.menu__link:hover {
+  background-color: #FF3F40;
+  color: #FFFFFF;
 }
 
 .text {
@@ -83,21 +83,21 @@ img {
   color: #FFFFFF;
 }
 
-.top {
+.header {
   background: #F6F2F2;
   padding-top: 29px;
   padding-bottom: 110px;
 }
-.top__content {
+.header__content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 101px;
 }
-.top__section {
+.header__section {
   width: 617px;
 }
-.top__title {
+.header__title {
   font-style: italic;
   font-weight: 800;
   font-size: 60px;
@@ -106,21 +106,21 @@ img {
   text-transform: uppercase;
   color: #000000;
 }
-.top__text {
+.header__text {
   width: 544px;
   margin-top: 37px;
   margin-bottom: 63px;
 }
-.top__button {
+.header__button {
   padding: 15px 63px;
   margin-bottom: 123px;
 }
-.top__button:hover {
+.header__button:hover {
   color: #000000;
   background-color: #FF0000;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.top__video {
+.header__video {
   width: 554px;
   height: 359px;
   box-shadow: 0px 0px 45px -10px rgba(0, 0, 0, 0.35);
@@ -253,17 +253,15 @@ img {
   color: #FF2D2D;
 }
 
-.products__block {
+.product__block {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 17px;
 }
 
-.products__photo {
+.product__photo {
   width: 301px;
   height: 293px;
-  border: 0.01px solid #000000;
-  background-color: #5281FF;
 }
 
 .team {
@@ -314,9 +312,13 @@ img {
   display: flex;
   width: 196px;
   height: 216px;
-  background-color: #FF3F40;
   position: relative;
   overflow: hidden;
+}
+
+.team__photo-big {
+  width: 311px;
+  height: 458px;
 }
 
 .team__name-box {
@@ -577,7 +579,7 @@ path {
 }
 
 @media screen and (max-width: 1280px) {
-  .products__block {
+  .product__block {
     gap: 14px;
   }
   .contacts {
@@ -604,18 +606,18 @@ path {
     padding-right: 16px;
     width: 100vw;
   }
-  .top__content {
+  .header__content {
     flex-direction: column;
     align-items: center;
     justify-content: unset;
   }
-  .top__section {
+  .header__section {
     width: 100vw;
   }
-  .top__block {
+  .header__block {
     margin-top: 60px;
   }
-  .top__video {
+  .header__video {
     width: 100vw;
     height: 400px;
   }
@@ -628,7 +630,7 @@ path {
   .product__menu {
     gap: 20px;
   }
-  .products__block {
+  .product__block {
     grid-template-columns: repeat(2, 300px);
     gap: 20px;
     justify-content: center;
@@ -664,13 +666,13 @@ path {
     padding-right: 16px;
     width: 100vw;
   }
-  .top__section {
+  .header__section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
   }
-  .products__block {
+  .product__block {
     grid-template-columns: repeat(2, 300px);
     gap: 30px;
     justify-content: center;
@@ -678,7 +680,7 @@ path {
   .product__menu {
     margin-left: 50px;
   }
-  .top__button {
+  .header__button {
     margin-bottom: unset;
   }
   .team__photo {
@@ -698,7 +700,7 @@ path {
   .text {
     width: unset;
   }
-  .top {
+  .header {
     position: relative;
   }
   .menu {
@@ -730,16 +732,16 @@ path {
     grid-row: span 1;
     grid-column: span 1;
   }
-  .products__block {
+  .product__block {
     grid-template-columns: repeat(1, 300px);
   }
-  .top__content {
+  .header__content {
     gap: 60px;
   }
-  .top__block {
+  .header__block {
     margin-top: unset;
   }
-  .top__section {
+  .header__section {
     width: 350px;
   }
   .form__input {
@@ -798,7 +800,7 @@ path {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .top__title {
+  .header__title {
     font-size: 40px;
   }
   .form__values {
@@ -816,4 +818,4 @@ path {
   .contacts__paragraph {
     width: unset;
   }
-}/*# sourceMappingURL=styleTest.css.map */
+}/*# sourceMappingURL=style.css.map */

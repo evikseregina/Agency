@@ -37,7 +37,7 @@ img {
 .menu {
     background: $color;
 
-    .menu__ul {
+    &__ul {
         list-style-type: none;
         display: flex;
         flex-wrap: wrap;
@@ -45,7 +45,7 @@ img {
         justify-content: center;
     }
 
-    .menu__link {
+    &__link {
         padding: 39px 23px 26px;
         display: flex;
         transition: all 0.4s;
@@ -56,24 +56,26 @@ img {
         letter-spacing: 0.5px;
         text-transform: uppercase;
         color: $inputColor;
-    }
+    
+         &_active {
+            background-color: $backColor;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: $inputColor;
+         }
+        }
 
-    .menu__link:hover {
+    &__link:hover {
 
         background-color: $backColor;
         color: $reverseColor;
     }
 
-    .menu__link_active {
-        background: $backColor;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
-        color: $inputColor;
-    }
+   
 }
 
 
@@ -95,7 +97,7 @@ img {
     color: $reverseColor;
 }
 
-.top {
+.header {
     background: $topColor;
     padding-top: 29px;
     padding-bottom: 110px;
@@ -158,11 +160,6 @@ img {
     border-radius: 5px;
 
 }
-
-
-
-
-
 
 
 .service {
@@ -286,18 +283,16 @@ img {
     color: $hoverColor;
 }
 
-.products__block {
+.product__block {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: $gap - 3;
 
 }
 
-.products__photo {
+.product__photo {
     width: 301px;
-    height: 293px;
-    border: 0.01px solid $color;
-    background-color: #5281FF;
+    height: 293px;  
 }
 
 .team {
@@ -350,15 +345,17 @@ img {
     display: flex;
     width: 196px;
     height: 216px;
-    background-color: $backColor;
     position: relative;
     overflow: hidden;
 }
-
+.team__photo-big{
+    width: 311px;
+    height:458px;
+}
 .team__name-box {
     mix-blend-mode: normal;
     text-transform: uppercase;
-    background-color: $color;
+     background-color: $color;
     opacity: 0.5;
     position: absolute;
     width: 100%;
@@ -620,7 +617,7 @@ path {
 
 
 @media screen and (max-width: 1280px) {
-    .products__block {
+    .product__block {
         gap: 14px
     }
 
@@ -654,22 +651,22 @@ path {
         width: 100vw;
     }
 
-    .top__content {
+    .header__content {
         flex-direction: column;
         align-items: center;
         justify-content: unset;
     }
 
-    .top__section {
+    .header__section {
         width: 100vw;
 
     }
 
-    .top__block {
+    .header__block {
         margin-top: 60px;
     }
 
-    .top__video {
+    .header__video {
         width: 100vw;
         height: 400px;
     }
@@ -686,7 +683,7 @@ path {
         gap: 20px;
     }
 
-    .products__block {
+    .product__block {
         grid-template-columns: repeat(2, 300px);
         gap: 20px;
         justify-content: center;
@@ -732,14 +729,14 @@ path {
         width: 100vw;
     }
 
-    .top__section {
+    .header__section {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
     }
 
-    .products__block {
+    .product__block {
         grid-template-columns: repeat(2, 300px);
         gap: 30px;
         justify-content: center;
@@ -749,7 +746,7 @@ path {
         margin-left: 50px;
     }
 
-    .top__button {
+    .header__button {
         margin-bottom: unset;
     }
 
@@ -775,7 +772,7 @@ path {
         width: unset;
     }
 
-    .top {
+    .header {
         position: relative;
 
     }
@@ -816,19 +813,19 @@ path {
         grid-column: span 1;
     }
 
-    .products__block {
+    .product__block {
         grid-template-columns: repeat(1, 300px);
     }
 
-    .top__content {
+    .header__content {
         gap: 60px
     }
 
-    .top__block {
+    .header__block {
         margin-top: unset;
     }
 
-    .top__section {
+    .header__section {
         width: 350px;
     }
 
@@ -903,7 +900,7 @@ path {
         padding-right: 16px;
     }
 
-    .top__title {
+    .header__title {
         font-size: 40px;
     }
 
