@@ -10,12 +10,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styleTest.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/14ab2b91a5.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="root">
-    <header class="top center">
+    <header class="header center">
         <i class="fa-solid fa-bars fa-2xl" style="color: #07035f;"></i>
         <nav class="menu">
             <ul class="menu__ul">
@@ -26,16 +26,16 @@
             </ul>
             <i class="fa-solid fa-xmark fa-2xl" style="color: #ffffff;"></i>
         </nav>
-        <div class="top__content ">
-            <div class="top__section">
-                <h1 class="top__title">our strong organaisation</h1>
-                <p class="text top__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod
+        <div class="header__content ">
+            <div class="header__section">
+                <h1 class="header__title">our strong organaisation</h1>
+                <p class="text header__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod
                     tempor
                     incididunt ut labore et. ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.</p>
-                <a href="#" class="button top__button">Contact Us</a>
+                <a href="#" class="button header__button">Contact Us</a>
             </div>
-            <div class="top__block">
-                <video class="top__video" controls src="#"></video>
+            <div class="header__block">
+                <video class="header__video" controls src="#"></video>
             </div>
         </div>
     </header>
@@ -97,15 +97,15 @@
                         <li class="product__li"><a href="#" class="product__link">mock-up</a></li>
                     </ul>
                 </div>
-                <div class="products__block">
-                    <div class="products__photo"></div>
-                    <div class="products__photo"></div>
-                    <div class="products__photo"></div>
-                    <div class="products__photo"></div>
-                    <div class="products__photo"></div>
-                    <div class="products__photo"></div>
-                    <div class="products__photo"></div>
-                    <div class="products__photo"></div>
+                <div class="product__block">
+                    <div class="product__photo"><img class="product__img" src="img/disign-1.jpg" alt="disign photo"></div>
+                    <div class="product__photo"><img class="product__img" src="img/disign-2.jpeg" alt="disign photo"></div>
+                    <div class="product__photo"><img class="product__img" src="img/disign-3.webp" alt="disign photo"></div>
+                    <div class="product__photo"><img class="product__img" src="img/disign-4.jpg" alt="disign photo"></div>
+                    <div class="product__photo"><img class="product__img" src="img/disign-5.jpg" alt="disign photo"></div>
+                    <div class="product__photo"><img class="product__img" src="img/disign-6.webp" alt="disign photo"></div>
+                    <div class="product__photo"><img class="product__img" src="img/disign-7.jpg" alt="disign photo"></div>
+                    <div class="product__photo"> <img class="product__img" src="img/disign-8.jpg" alt="disign photo"></div>
                 </div>
             </div>
         </section>
@@ -118,9 +118,9 @@
                 <div class="line team__line"></div>
             </div>
             <div class="team__section">
-                <img class="team__photo-big" src="img/Selected Image.png" alt="big photo">
+                <img class="team__photo-big" src="img/leo.jpg" alt="big photo of man">
                 <div class="team__content">
-                    <h4 class="team__subtitle">mark waugh</h4>
+                    <h4 class="team__subtitle">Leo DiCaprio</h4>
                     <p class="text team__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing
                         eiusmod
                         tempor
@@ -132,21 +132,23 @@
                         <a href="" class="team__link">Twiter</a>
                     </div>
                     <div class="team__img">
-                        <a href="#" class="team__photo">
+                        <a href="#" class="team__photo"><img  src="img/people1.jpg" alt="man photo">
                             <div class="team__name-box">
+                                <h4 class="team__person-name">Mark Waugh</h4>
+                            </div>
+                             </a>  
+                        <a href="#" class="team__photo"> <img src="img/people2.png" alt="woman photo">
+
+                            <div class="team__name-box"> 
                                 <h4 class="team__person-name">Sokina jue</h4>
                             </div>
-                        </a><a href="#" class="team__photo">
+                        </a><a href="#" class="team__photo"><img  src="img/photo-big.jpg" alt="man photo">
                             <div class="team__name-box">
-                                <h4 class="team__person-name">Sokina jue</h4>
+                                <h4 class="team__person-name"> Travis Bickle </h4>
                             </div>
-                        </a><a href="#" class="team__photo">
+                        </a><a href="#" class="team__photo"> <img  src="img/manongreen.png" alt="man photo">
                             <div class="team__name-box">
-                                <h4 class="team__person-name">Sokina jue</h4>
-                            </div>
-                        </a><a href="#" class="team__photo">
-                            <div class="team__name-box">
-                                <h4 class="team__person-name">Sokina jue</h4>
+                                <h4 class="team__person-name">Kevin Bacon</h4>
                             </div>
                         </a>
                     </div>
@@ -179,10 +181,10 @@
             <div class="line contacts__stroke"></div>
             <div class="contacts__position">
                 <div class="contacts__form">
-                    <form action="">
+                    <form action="#"  >
                         <div class="contacts__div">
                             <input class="contacts__input" type="text" placeholder="Name">
-                            <input class="contacts__input" type="email" name="useremail" id="usermail"
+                            <input  class="contacts__input"  type="email"  name="useremail" id="usermail"
                                 placeholder="Your Mail">
                         </div>
                         <textarea class=" contacts__input contacts__input_textarea" type="text"
