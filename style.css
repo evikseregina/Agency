@@ -677,9 +677,6 @@ path {
     gap: 30px;
     justify-content: center;
   }
-  .product__menu {
-    margin-left: 50px;
-  }
   .header__button {
     margin-bottom: unset;
   }
@@ -789,6 +786,9 @@ path {
   }
   .footer__text {
     padding: unset;
+  }
+  .product__menu {
+    margin-left: unset;
   }
 }
 @media (max-width: 460px) {
